@@ -1,7 +1,8 @@
 'use client';
 import React, { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import Typewriter from "typewriter-effect";
+import { Typewriter } from "react-simple-typewriter";
+// import Typewriter from "typewriter-effect";
 
 const Hero = () => {
     const router = useRouter();
@@ -29,7 +30,9 @@ const Hero = () => {
             console.error('Audio play failed:', error);
         });
     };
-
+    const hello = () => {
+        // dhell
+    }
     return (
         <section
             className="relative h-screen bg-cover bg-center"
