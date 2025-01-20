@@ -13,7 +13,6 @@ export default function Home() {
 
     return (
         <div className="relative w-full h-[300vh] bg-gradient-to-b from-blue-300 to-blue-500 overflow-hidden">
-            {/* Cloud Background */}
             {[...Array(10)].map((_, i) => (
                 <motion.div
                     key={i}
@@ -42,7 +41,6 @@ export default function Home() {
                 </motion.div>
             ))}
 
-            {/* Plane */}
             <motion.div
                 className="absolute w-48 h-32"
                 style={{
