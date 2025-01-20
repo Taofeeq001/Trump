@@ -44,10 +44,24 @@ const page = () => {
       </div>
       <div className="bg-gray-900 py-[4%] flex flex-col gap-10">
         <Marquee direction="left">
-          {/* Marquee images */}
+          <Image src="/Images/trump1.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump2.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump3.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump4.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump5.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump6.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump7.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump8.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
         </Marquee>
         <Marquee direction="right">
-          {/* Marquee images */}
+          <Image src="/Images/trump1.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump2.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump3.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump4.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump5.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump6.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump7.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump8.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
         </Marquee>
       </div>
       <Home />
