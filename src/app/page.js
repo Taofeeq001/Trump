@@ -1,21 +1,31 @@
 'use client';
+import React, { useState, useEffect } from 'react';
 import Header from '@/components/Index/Header';
 import Tokenomics from '@/components/Index/Tokenomics';
 import Image from 'next/image';
-import React from 'react';
 import Marquee from 'react-fast-marquee';
 import { motion } from 'framer-motion';
 import Roadmap from '@/components/Index/Roadmap';
 
 const page = () => {
+  const [currentImage, setCurrentImage] = useState('/Images/about_trump.webp');
+
+  useEffect(() => {
+    const imageSwitcher = setInterval(() => {
+      setCurrentImage((prevImage) =>
+        prevImage === '/Images/about_trump.webp' ? '/Images/Trump.webp' : '/Images/about_trump.webp'
+      );
+    }, 3000); // Switch every 3 seconds
+
+    return () => clearInterval(imageSwitcher);
+  }, []);
 
   return (
     <div className='overflow-x-hidden'>
-      <div className="bg-[url('/Images/img.jpg')] bg-no-repeat bg-cover w-full h-[100vh] relative flex items-center justify-center">
-        <div className="absolute inset-0 bg-[#102533] bg-opacity-85 z-[100]"></div>
-
+      <div className="bg-[#9CD85D] bg-no-repeat bg-cover w-full lg:h-[100vh] flex lg:flex-row flex-col items-center justify-center relative">
+        <Image src={currentImage} alt='' width={500} height={500} />
+        <Image src={"/Images/about_grass.webp"} className='absolute lg:h-[100vh] z-[5000] w-[80%] top-0 ' alt='' width={200} height={200} />
         <Header />
-
         <div className="flex items-center px-[7%] w-full z-[5000] flex-col gap-3">
           <p className="text-gray-200 text-center animated-text">
             Learn about the revolutionary token powering the AID TRUMP ecosystem and driving decentralized innovation.
@@ -33,24 +43,10 @@ const page = () => {
       </div>
       <div className="bg-gray-900 py-[4%] flex flex-col gap-10">
         <Marquee direction="left">
-          <Image src="/Images/trump1.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump2.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump3.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump4.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump5.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump6.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump7.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump8.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          {/* Marquee images */}
         </Marquee>
         <Marquee direction="right">
-          <Image src="/Images/trump1.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump2.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump3.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump4.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump5.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump6.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump7.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump8.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          {/* Marquee images */}
         </Marquee>
       </div>
       <Tokenomics />
