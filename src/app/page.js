@@ -23,7 +23,7 @@ const page = () => {
 
   return (
     <div className='overflow-x-hidden'>
-      <div className="bg-[#9CD85D] bg-no-repeat bg-cover w-full lg:h-[100vh] flex lg:flex-row flex-col items-center justify-center relative">
+      <div className="bg-[#9CD85D] bg-no-repeat bg-cover w-full lg:h-[100vh] lg:py-0 py-10 flex lg:flex-row flex-col items-center justify-center relative">
         <Image src={currentImage} className='z-[300]' alt='' width={500} height={500} />
         <Image src={"/Images/about_grass.webp"} className='absolute lg:h-[100vh] w-[80%] top-0 ' alt='' width={200} height={200} />
         <Header />
@@ -36,32 +36,32 @@ const page = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 50, damping: 20, duration: 1 }}
           >
-            <p className="text-white text-[80px] text-center leading-none">
+            <p className="text-white lg:text-[70px] text-[35px] text-center leading-none">
               Welcome to Meme <br /> TrumpCoin (TRUMP)
             </p>
           </motion.div>
         </div>
       </div>
-      <div className="bg-gray-900 py-[4%] flex flex-col gap-10">
+      <div id='achievements' className="bg-gray-900 py-[4%] flex flex-col gap-10">
         <Marquee direction="left">
-          <Image src="/Images/trump1.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump2.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump3.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump4.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump5.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump6.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump7.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump8.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump1.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump2.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump3.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump4.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump5.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump6.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump7.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump8.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
         </Marquee>
         <Marquee direction="right">
-          <Image src="/Images/trump1.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump2.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump3.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump4.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump5.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump6.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump7.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
-          <Image src="/Images/trump8.jpg" width={500} height={500} alt="" className="rounded-lg lg:h-[300px] lg:w-[300px] mr-3" />
+          <Image src="/Images/trump1.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump2.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump3.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump4.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump5.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump6.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump7.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
+          <Image src="/Images/trump8.jpg" width={500} height={500} alt="" className="rounded-lg h-[300px] w-[300px] mr-3" />
         </Marquee>
       </div>
       <Home />

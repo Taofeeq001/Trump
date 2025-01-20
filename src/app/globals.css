@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Paytone+One&family=Phetsarath:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+
+* {
+  font-family: "Paytone One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 @keyframes colorChange {
   0% {

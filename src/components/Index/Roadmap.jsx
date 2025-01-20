@@ -52,7 +52,7 @@ const Roadmap = () => {
     ];
 
     return (
-        <section className="bg-gradient-to-b from-[#111827] to-[#4B6486] text-white py-16 relative">
+        <section id='roadmap' className="bg-gradient-to-b from-[#111827] to-[#4B6486] text-white py-16 relative">
             <Image src={"/Images/cloud.webp"} width={190} className='absolute top-1 animate-moveLeft' height={190} alt='' />
             <Image src={"/Images/cloud.webp"} width={190} className='absolute top-1 right-2 animate-moveLeft' height={190} alt='' />
             <div className="max-w-7xl mx-auto px-6">
