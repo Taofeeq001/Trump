@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import { motion } from 'framer-motion';
 import Roadmap from '@/components/Index/Roadmap';
+import Home from '@/components/Index/Animation';
 
 const page = () => {
   const [currentImage, setCurrentImage] = useState('/Images/about_trump.webp');
@@ -23,8 +24,8 @@ const page = () => {
   return (
     <div className='overflow-x-hidden'>
       <div className="bg-[#9CD85D] bg-no-repeat bg-cover w-full lg:h-[100vh] flex lg:flex-row flex-col items-center justify-center relative">
-        <Image src={currentImage} alt='' width={500} height={500} />
-        <Image src={"/Images/about_grass.webp"} className='absolute lg:h-[100vh] z-[5000] w-[80%] top-0 ' alt='' width={200} height={200} />
+        <Image src={currentImage} className='z-[300]' alt='' width={500} height={500} />
+        <Image src={"/Images/about_grass.webp"} className='absolute lg:h-[100vh] w-[80%] top-0 ' alt='' width={200} height={200} />
         <Header />
         <div className="flex items-center px-[7%] w-full z-[5000] flex-col gap-3">
           <p className="text-gray-200 text-center animated-text">
@@ -49,6 +50,7 @@ const page = () => {
           {/* Marquee images */}
         </Marquee>
       </div>
+      <Home />
       <Tokenomics />
       <Roadmap />
     </div>
